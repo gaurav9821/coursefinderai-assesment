@@ -5,9 +5,11 @@
 }
 
 .steps-title {
-  font-size: 24px;
   font-weight: 600;
-  color: #2e2e2e;
+  font-size: 42px;
+  line-height: 130%;
+  text-align: center;
+  color: #0E1B2C;
   margin-bottom: 2rem;
 }
 

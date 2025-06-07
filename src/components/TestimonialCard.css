@@ -50,7 +50,7 @@
 }
 
 .center-card {
-  transform: translateY(20px); /* Drop the middle card */
+  transform: translateY(30px); /* Drop the middle card */
   z-index: 2;
 }
 
