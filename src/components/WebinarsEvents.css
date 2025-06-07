@@ -1,0 +1,193 @@
+/* Base Container */
+.webinars-container {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.webinars-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #0e1b2c;
+}
+
+/* Desktop View */
+.desktop-view {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Large card (left side) */
+.event-card.large {
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(29, 38, 59, 0.08);
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  height: 530px;
+}
+
+.event-card.large .event-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+/* Right side - stacked small cards */
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.event-card.small {
+  display: flex;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(29, 38, 59, 0.08);
+  overflow: hidden;
+  width: 570px;
+  height: 250px;
+}
+
+.event-card.small .small-img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #0e1b2c;
+}
+
+.event-date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #226cf5;
+  font-weight: 500;
+}
+
+.event-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 1rem 0;
+  color: #64647a;
+}
+
+.register-link {
+  color: #ff7361;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* See More Link */
+.see-more {
+  height: 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.see-more a {
+  color: #ff7361;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+}
+
+/* Mobile View Slider */
+.mobile-slider {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mobile-slider .event-card {
+    flex: 0 0 90%;
+    scroll-snap-align: start;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0px 6px 50px 0px #0000001a;
+    overflow: hidden;
+  }
+
+  .mobile-slider .event-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .webinars-container h2 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #0e1b2c;
+  }
+  .event-date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #226cf5;
+  }
+  .event-details h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+  .event-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+}

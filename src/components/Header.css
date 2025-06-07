@@ -1,0 +1,122 @@
+.header-main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #6c48f0;
+  z-index: 999;
+}
+
+#header-navbar {
+  max-width: 1440px;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.main-menu div {
+  padding: 8px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 95px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-menu div span {
+  margin-left: 8px;
+  padding-right: 7px;
+}
+
+.finder-button {
+  margin-left: 15px;
+  min-width: 160px;
+  height: 48px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ==================== */
+/* 🟣 Responsive Section */
+/* ==================== */
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1); /* makes icon white */
+}
+
+@media (max-width: 768px) {
+  .main-menu {
+    display: none;
+    position: absolute;
+    top: 80px; /* adjust based on header height */
+    right: 16px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    flex-direction: column;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+
+  .main-menu div {
+    justify-content: flex-start;
+    color: #333;
+  }
+
+  .main-menu div span {
+    margin-left: 0;
+  }
+  .logo-container img {
+    width: 220px;
+    height: 30px;
+  }
+
+  .finder-button {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+    color: #6c48f0;
+    border-color: #6c48f0;
+  }
+
+  .hamburger-icon {
+    display: block;
+    padding: 20px;
+  }
+  #header-navbar {
+    padding: 12px;
+    margin-top: 10px;
+  }
+
+  /* Show dropdown when menuOpen is true */
+  .main-menu.show {
+    display: flex;
+  }
+}
