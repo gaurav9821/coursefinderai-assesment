@@ -13,7 +13,7 @@
   background-color: #6c48f0;
   color: white;
   text-align: center;
-  clip-path: ellipse(90% 100% at top);
+  clip-path: ellipse(85% 100% at top);
 }
 
 .city-highlight {
@@ -60,7 +60,7 @@
   font-weight: 600;
   font-size: 42px;
   line-height: 130%;
-  letter-spacing: 0%;
+  
   text-align: center;
   color: #fff;
 }
@@ -75,7 +75,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  letter-spacing: 0%;
   text-align: center;
 }
 
@@ -83,7 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .enquire-btn {
@@ -110,12 +109,19 @@
   cursor: pointer;
 }
 
-.new {
+.down-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 8px 30px 0px #0A02171F;
+  cursor: pointer;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
-.down-arrow {
-  cursor: pointer;
+.down-arrow span{
+  color: #0E1B2C;
 }
 
 @media (max-width: 768px) {

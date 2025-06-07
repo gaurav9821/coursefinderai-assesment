@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import DownArrow from "../icons/down_arrow.svg";
+import DownArrow from "../icons/down-arrow.svg";
 import "./Body.css";
 
 const Body = () => {
@@ -35,14 +35,17 @@ const Body = () => {
 
             <div className="branch-buttons">
               <button className="enquire-btn">Enquire Now</button>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div className="new">
-                  <img
-                    className="down-arrow"
-                    src={DownArrow}
-                    alt="down-arrow"
-                    onClick={scrollToBottom}
-                  />
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "12px",
+                }}
+              >
+                <div className="down-arrow" onClick={scrollToBottom}>
+                  <span>
+                    <img src={DownArrow} alt="down-arrow" />
+                  </span>
                 </div>
                 <span className="address-btn" onClick={scrollToBottom}>
                   Branch Address

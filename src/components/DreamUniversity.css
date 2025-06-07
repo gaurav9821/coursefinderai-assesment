@@ -57,18 +57,6 @@
   border-color: #6b4eff;
 }
 
-/* Horizontal line between circles */
-/* .between-line {
-  width: 60px;
-  height: 2px;
-  background-image: linear-gradient(to right, #ccc 50%, transparent 50%);
-  background-size: 8px 2px;
-  background-repeat: repeat-x;
-  position: absolute;
-  top: 35px;
-  left: 100%;
-  z-index: 0;
-} */
 
 /* Card container */
 .step-card-container {
@@ -94,6 +82,10 @@
   position: relative;
   min-height: 260px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .triangle-pointer {
@@ -158,10 +150,19 @@
     justify-content: flex-start; /* ONLY on mobile */
     gap: 16px; /* tighter gap for mobile */
   }
-
+  .steps-title {
+    font-size: 26px;
+    line-height: 130%;
+    text-align: center;
+  }
   .step-column {
     flex: 0 0 274px;
     scroll-snap-align: start;
+  }
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
   }
 
   .step-card-container {
@@ -169,21 +170,9 @@
   }
 
   .step-card {
-    width: 100%;
-    min-height: 209px;
+    width: 274px;
+    height: 209px; /* FIXED height */
     padding: 1rem;
-  }
-
-  .between-line {
-    width: 40px;
-    height: 2px;
-    background-image: repeating-linear-gradient(
-      to right,
-      #ccc,
-      #ccc 4px,
-      transparent 4px,
-      transparent 8px
-    );
-    margin: 0 5px;
+    box-sizing: border-box;
   }
 }

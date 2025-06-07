@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./TestimonialCard.css";
 import Comma from "../icons/Comma.svg";
-import Next from "../icons/Next.svg";
-import Previous from "../icons/Previous.svg";
 
 const testimonials = [
   {
@@ -24,6 +22,16 @@ const testimonials = [
 
 const TestimonialCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handlePrev = () => {
     setCurrentIndex((prev) =>
@@ -46,23 +54,44 @@ const TestimonialCarousel = () => {
             {"<"}
           </button>
 
-          <div className="carousel-track">
-            {testimonials.map((t, i) => (
+          {isMobile ? (
+            <div className="carousel-window">
               <div
-                className={`testimonial-card ${i === 1 ? "center-card" : ""} ${
-                  currentIndex === i ? "active-mobile" : ""
-                }`}
-                key={i}
+                className="carousel-track"
+                style={{
+                  transform: `translateX(-${currentIndex * 100}%)`,
+                }}
               >
-                <div className="quote-icon">
-                  <img src={Comma} alt="Quote" />
-                </div>
-                <p className="testimonial-text">{t.text}</p>
-                <p className="student-name">{t.name}</p>
-                <p className="student-university">{t.university}</p>
+                {testimonials.map((t, i) => (
+                  <div className="testimonial-card" key={i}>
+                    <div className="quote-icon">
+                      <img src={Comma} alt="Quote" />
+                    </div>
+                    <p className="testimonial-text">{t.text}</p>
+                    <p className="student-name">{t.name}</p>
+                    <p className="student-university">{t.university}</p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ) : (
+            <div className="carousel-track">
+              {testimonials.map((t, i) => (
+                <div
+                  className={`testimonial-card ${i === 1 ? "center-card" : ""}`}
+                  key={i}
+                >
+                  <div className="quote-icon">
+                    <img src={Comma} alt="Quote" />
+                  </div>
+                  <p className="testimonial-text">{t.text}</p>
+                  <p className="student-name">{t.name}</p>
+                  <p className="student-university">{t.university}</p>
+                </div>
+              ))}
+            </div>
+          )}
+
           <button className="carousel-arrow right" onClick={handleNext}>
             {">"}
           </button>

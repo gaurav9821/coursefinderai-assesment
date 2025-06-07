@@ -27,11 +27,17 @@ const SubscribeSection = () => {
         <h2 className="subscribe-heading">Stay updated with KC Overseas</h2>
         <div className="subscribe-form">
           <input
+            name="email-id"
+            id="email-id"
             type="email"
             placeholder="Email ID"
             className="subscribe-input"
           />
-          <select className="subscribe-select">
+          <select
+            className="subscribe-select"
+            name="select-name"
+            id="select-name"
+          >
             <option value="">I'm Interested in</option>
             <option value="">Student</option>
             <option value="">Institute</option>

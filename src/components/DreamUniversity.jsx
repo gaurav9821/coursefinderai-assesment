@@ -69,7 +69,7 @@ const DreamUniversity = () => {
                 {index + 1}
               </div>
 
-              {index < stepsData.length - 1 && <div className="between-line" />}
+              {index < stepsData.length - 1}
 
               <div
                 ref={(el) => (cardRefs.current[index] = el)}
