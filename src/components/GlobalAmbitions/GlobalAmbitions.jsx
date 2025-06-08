@@ -1,5 +1,5 @@
 import GlobalPhoto from "../../icons/Global.png";
-import BulletPoint from "../../icons/BulletPoint.svg";
+import BulletPoint from "../../icons/BulletPoint-1.svg";
 import "./GlobalAmbitions.css";
 
 function GlobalAmbitions() {
@@ -19,17 +19,23 @@ function GlobalAmbitions() {
           </p>
           <ul className="ambition-list">
             <li>
-              <img src={BulletPoint} alt="BulletPoint" />
+              <div className="bullet-points">
+                <img src={BulletPoint} alt="BulletPoint" />
+              </div>
               <span>Virtual & In Person Coaching and Counselling</span>
             </li>
             <li>
-              <img src={BulletPoint} alt="BulletPoint" />
+              <div className="bullet-points">
+                <img src={BulletPoint} alt="BulletPoint" />
+              </div>
               <span>
                 Comprehensive Assistance for Applications, Admissions & Visas
               </span>
             </li>
             <li>
-              <img src={BulletPoint} alt="BulletPoint" />
+              <div className="bullet-points">
+                <img src={BulletPoint} alt="BulletPoint" />
+              </div>
               <span>High Value Scholarships and Study Loans</span>
             </li>
           </ul>

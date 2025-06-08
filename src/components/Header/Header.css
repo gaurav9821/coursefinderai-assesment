@@ -118,6 +118,11 @@
   .main-menu.show {
     display: flex;
   }
+  .logo-container img {
+    width: 119px;
+    height: 26px;
+  }
+  
 
   /* ========= Mobile Fullscreen Menu ========= */
   .mobile-fullscreen-menu {

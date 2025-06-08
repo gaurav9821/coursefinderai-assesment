@@ -1,3 +1,4 @@
+/* === Main Section === */
 .ambition-section {
   width: 100%;
   background: #ffffff;
@@ -36,8 +37,8 @@
 
 .ambition-image img {
   position: absolute;
-  bottom: 8px; /* overflow down */
-  left: 35px; /* overflow left */
+  bottom: 8px;
+  left: 35px;
   width: 440px;
   height: 400px;
   object-fit: cover;
@@ -68,6 +69,7 @@
   max-width: 520px;
 }
 
+/* === List and Bullet Points === */
 .ambition-list {
   list-style: none;
   padding: 0;
@@ -76,21 +78,34 @@
   flex-direction: column;
   gap: 14px;
 }
+
 .ambition-list li {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  align-items: flex-start;
   font-size: 1rem;
   color: #0f172a;
   line-height: 1.5;
 }
 
-.ambition-list li img {
-  width: auto; /* preserve aspect ratio */
-  object-fit: contain;
-  display: block;
+.bullet-points {
+  width: 30px;
+  height: 30px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 15px 0px #0000001A, 0px 0px 5px 0px #0000000D;
+  margin-right: 12px;
 }
+
+.bullet-points img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
 
 /* === Mobile Responsive === */
 @media (max-width: 768px) {
@@ -100,13 +115,13 @@
     text-align: center;
     gap: 16px;
   }
+
   .ambition-image {
     position: relative;
     width: 332px;
     height: 298px;
   }
 
-  /* Yellow box */
   .bg-box {
     position: absolute;
     top: 0;
@@ -118,7 +133,6 @@
     z-index: 1;
   }
 
-  /* Image on top */
   .ambition-image img {
     position: absolute;
     bottom: 0;
@@ -139,7 +153,6 @@
   }
 
   .ambition-content h2 {
-    
     font-weight: 600;
     font-size: 26px;
     line-height: 120%;
@@ -147,23 +160,29 @@
   }
 
   .ambition-content p {
-    width: 335px;
+    width: 100%;
     font-weight: 350;
     font-size: 16px;
     line-height: 140%;
     text-align: left;
+    max-width: 335px;
   }
 
   .ambition-list li {
-    font-weight: 400;
+    align-items: flex-start;
     font-size: 16px;
     line-height: 160%;
     text-align: left;
   }
 
-  .ambition-list li img {
+  .bullet-points {
     width: 30px;
     height: 30px;
+    margin-right: 12px;
+  }
+
+  .bullet-points img {
+    width: 18px;
+    height: 18px;
   }
 }
-
