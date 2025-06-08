@@ -14,6 +14,7 @@
   color: white;
   text-align: center;
   clip-path: ellipse(85% 100% at top);
+  height: 550px;
 }
 
 .city-highlight {
@@ -82,7 +83,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  margin-top: 20px;
+  gap: 40px;
 }
 
 .enquire-btn {
@@ -128,6 +130,7 @@
   #branchheading {
     padding: 40px 15px;
     clip-path: ellipse(150% 100% at top);
+    height: 600px;
   }
   .breadcrumb {
     font-weight: 600;
@@ -137,6 +140,8 @@
   .branch-buttons {
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
+    gap:20px;
   }
   .branch-buttons button {
     width: 232px;
