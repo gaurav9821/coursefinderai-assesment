@@ -1,14 +1,14 @@
 import "./App.css";
 
-import Services from "./components/Services";
-import GlobalAmbitions from "./components/GlobalAmbitions";
-import DreamUniversity from "./components/DreamUniversity";
-import TestimonialCarousel from "./components/TestimonialCarousel";
-import KCUpdates from "./components/KCUpdates";
-import SubscribeSection from "./components/SubscribeSection";
-import Header from "./components/Header";
-import Body from "./components/Body";
-import WebinarsEvents from "./components/WebinarsEvents";
+import Services from "./components/Services/Services";
+import GlobalAmbitions from "./components/GlobalAmbitions/GlobalAmbitions";
+import DreamUniversity from "./components/DreamUniversity/DreamUniversity";
+import TestimonialCarousel from "./components/TestimonialCarousel/TestimonialCarousel";
+import KCUpdates from "./components/KCUpdates/KCUpdates";
+import SubscribeSection from "./components/SubscribeSection/SubscribeSection";
+import Header from "./components/Header/Header";
+import Body from "./components/Body/Body";
+import WebinarsEvents from "./components/WebinarsEvents/WebinarsEvents";
 import { useEffect } from "react";
 
 function App() {

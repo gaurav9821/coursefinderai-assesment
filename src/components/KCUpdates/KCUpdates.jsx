@@ -1,8 +1,8 @@
 import React from "react";
 import "./KCUpdates.css";
-import Certification from "../icons/certification.png";
-import BritishCouncil from "../icons/BritishCouncil.png";
-import Star from "../icons/star.svg";
+import Certification from "../../icons/certification.png";
+import BritishCouncil from "../../icons/BritishCouncil.png";
+import Star from "../../icons/star.svg";
 
 const KCUpdates = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import DownArrow from "../icons/down-arrow.svg";
+import DownArrow from "../../icons/down-arrow.svg";
 import "./Body.css";
 
 const Body = () => {

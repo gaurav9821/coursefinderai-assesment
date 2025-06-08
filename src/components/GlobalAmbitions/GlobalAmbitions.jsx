@@ -1,5 +1,5 @@
-import GlobalPhoto from "../icons/Global.png";
-import BulletPoint from "../icons/BulletPoint.svg";
+import GlobalPhoto from "../../icons/Global.png";
+import BulletPoint from "../../icons/BulletPoint.svg";
 import "./GlobalAmbitions.css";
 
 function GlobalAmbitions() {

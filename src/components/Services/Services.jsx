@@ -1,8 +1,8 @@
 import React from "react";
-import AppicationAssist from "../icons/application-assist.svg";
-import EducationLoan from "../icons/education-loan.svg";
-import Insurance from "../icons/insurance.svg";
-import TestPrep from "../icons/test-prep.svg";
+import AppicationAssist from "../../icons/application-assist.svg";
+import EducationLoan from "../../icons/education-loan.svg";
+import Insurance from "../../icons/insurance.svg";
+import TestPrep from "../../icons/test-prep.svg";
 import "./Services.css";
 
 function Services() {

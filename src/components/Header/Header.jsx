@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import HeaderIcon from "../icons/logo.svg";
-import HamburgerIcon from "../icons/HamBurger.svg";
-// import CloseIcon from "../icons/Close.svg"; // <-- Add a Close (X) icon
+import HeaderIcon from "../../icons/logo.svg";
+import HamburgerIcon from "../../icons/HamBurger.svg";
+// import CloseIcon from "../../icons/Close.svg"; // <-- Add a Close (X) icon
 import "./Header.css";
 
 const Header = () => {

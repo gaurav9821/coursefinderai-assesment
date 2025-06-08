@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import Conselling from "../icons/counselling.svg";
-import TestPrep from "../icons/test_prep_new.svg";
+import Conselling from "../../icons/counselling.svg";
+import TestPrep from "../../icons/test_prep_new.svg";
 import "./DreamUniversity.css";
 
 const stepsData = [

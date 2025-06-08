@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./TestimonialCard.css";
-import Comma from "../icons/Comma.svg";
+import Comma from "../../icons/Comma.svg";
 
 const testimonials = [
   {

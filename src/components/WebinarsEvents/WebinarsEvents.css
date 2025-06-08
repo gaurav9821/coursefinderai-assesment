@@ -11,7 +11,7 @@
   font-weight: 600;
   font-size: 42px;
   line-height: 120%;
-  
+
   text-align: center;
   color: #0e1b2c;
 }
@@ -73,7 +73,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 150%;
-  
+
   color: #0e1b2c;
 }
 
@@ -81,7 +81,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  
+
   vertical-align: middle;
   color: #226cf5;
   font-weight: 500;
@@ -91,7 +91,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  
+
   text-align: left;
   margin: 1rem 0;
   color: #64647a;
@@ -165,7 +165,7 @@
     font-weight: 600;
     font-size: 26px;
     line-height: 130%;
-    
+
     text-align: center;
     color: #0e1b2c;
   }
@@ -173,7 +173,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
-    
+
     vertical-align: middle;
     color: #226cf5;
   }
@@ -181,13 +181,12 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 140%;
-    
   }
   .event-desc {
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
-    
+
     vertical-align: middle;
   }
 }

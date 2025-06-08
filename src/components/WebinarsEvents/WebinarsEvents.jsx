@@ -1,8 +1,8 @@
 import React from "react";
 import "./WebinarsEvents.css";
-import usaImage from "../icons/usa.png";
-import nzImage from "../icons/nz.png";
-import ukImage from "../icons/uk.png";
+import usaImage from "../../icons/usa.png";
+import nzImage from "../../icons/nz.png";
+import ukImage from "../../icons/uk.png";
 
 const events = [
   {
