@@ -73,15 +73,15 @@
 .ambition-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 20px;
 }
 
 .ambition-list li {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   font-size: 1rem;
   color: #0f172a;
   line-height: 1.5;
@@ -169,7 +169,7 @@
   }
 
   .ambition-list li {
-    align-items: flex-start;
+    align-items: center;
     font-size: 16px;
     line-height: 160%;
     text-align: left;
