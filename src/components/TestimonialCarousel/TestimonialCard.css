@@ -193,3 +193,27 @@
     margin-top: 24px;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .testimonial-carousel {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0 16px;
+  }
+
+  .carousel-track {
+    min-width: max-content;
+    gap: 24px;
+  }
+
+  .testimonial-card {
+    flex-shrink: 0;
+    width: 320px;
+    height: 321px;
+  }
+
+  .carousel-arrow {
+    display: none;
+  }
+}
+

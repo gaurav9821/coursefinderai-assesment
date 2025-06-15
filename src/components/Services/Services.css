@@ -121,3 +121,14 @@
     color: #ffffff;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .services-container {
+    grid-template-columns: 1fr; /* Stack the boxes vertically */
+    padding: 0 20px; /* Add horizontal padding */
+  }
+
+  .service-box {
+    width: 100%; /* Let it shrink naturally within grid */
+  }
+}

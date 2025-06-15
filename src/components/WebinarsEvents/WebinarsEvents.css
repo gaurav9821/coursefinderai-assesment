@@ -190,3 +190,74 @@
     vertical-align: middle;
   }
 }
+
+/* Mobile + Tablet view: up to 768px */
+@media (max-width: 768px) {
+  .desktop-view {
+    display: none !important;
+  }
+
+  .mobile-slider {
+    display: flex !important;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+
+  .mobile-slider .event-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0px 6px 50px 0px #0000001a;
+    overflow: hidden;
+  }
+
+  .mobile-slider .event-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .event-details {
+    padding: 1rem;
+  }
+
+  .event-details h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 140%;
+    margin: 0.5rem 0;
+  }
+
+  .event-date {
+    font-size: 14px;
+    color: #226cf5;
+    font-weight: 500;
+  }
+
+  .event-desc {
+    font-size: 14px;
+    color: #64647a;
+    margin: 0.8rem 0;
+    line-height: 160%;
+  }
+
+  .register-link {
+    color: #ff7361;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .see-more {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+
+
+
